@@ -1,0 +1,824 @@
+*{
+    margin: 0;
+}
+:root{
+     --white:hsl(0, 0%, 98%);
+     --Medium-Gray:hsl(0, 0%, 41%);
+     --Almost-Black:hsl(0, 0%, 8%)
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color:#000000;
+    padding-top: 10px;
+    
+}
+nav ul{
+    display: inline;
+   
+   
+}
+
+nav ul li{
+    text-decoration: none;
+    display: inline;
+    cursor: pointer;
+    padding: 15px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.5px;
+ 
+   
+ 
+}
+
+.login, .Register{
+    border-radius: 10px;
+    width: 80px;
+    height: 32px;
+    border: 1px solid var(--white);
+    border: none;
+    background-color: #4377ED;
+    transition: 2s;
+    transition-property: border-style border-color;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 0.5px;
+    margin-left: 10px;
+   
+    
+}
+.signup-login-btn{
+    padding-bottom: 10px;
+     
+}
+.Register{
+    border-color: var(--Almost-Black);
+   
+}
+ .Register:hover{
+   border-color: var(--Almost-Black);
+}
+
+.unordered-list{
+    width: 140px;
+    height: 150px;
+    background-color: var(--white);
+    box-shadow: 1px 2px 12px 2px var(--Medium-Gray);
+    border-radius: 5px;
+    border: 0px solid white;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+   position: relative;
+   left: 120px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+span{
+    margin-left: 5px;
+}
+.unli{
+    height: 120px;
+    position: relative;
+    width: 120px;
+    bottom: 30px;
+}
+main{
+    
+   display: flex;
+   justify-content: space-around;
+   padding-top: 5%;
+   background-color:#020914;
+}
+
+h1{
+    font-size: 55px;
+    font-weight: 700;
+  
+    color: white;
+}
+
+.burger div{
+    width: 35px;
+    height: 5px;
+    background-color:#113faa;
+    margin: 5px;
+    cursor: pointer;
+    display: none;
+   
+}
+.st-main-content{
+    width:  50%;
+    padding-left: 30px;
+    
+}
+p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+   
+    padding-left: 10px;
+    color: white;
+    /* width: 40%; */
+}
+.main-img{
+    width: 80%;
+}
+
+.learn{
+    margin-top: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    width: 140px;
+    height: 39px;
+    color: white;
+    border: none;
+    border-color: white;
+    background-color: #113faa;
+    transition: 2s;
+    transition-property: border-style border-color;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    letter-spacing: 1px;
+   
+}
+.learn:hover{
+    border: 2px solid  var(--Almost-Black);
+    background-color: var(--white);
+    color: black;
+}
+.logos{
+  margin-top: 20px;
+  padding: 10px;
+}
+footer{
+      background-color: #000000;
+}
+
+/* this the crypto prices sides */
+.content{
+    height: 200px;
+    width: 320px;   
+    border-radius: 12px;
+    /* border: 2px solid white; */
+    margin-left:50px;
+    background-color: #020914;
+    box-shadow: 1px 0px 12px 0px white;
+    }
+    .crypto-images{
+        width: 25px;
+        border-radius: 100%;
+        display: inline;
+        position: relative;
+        top: 55px;
+        left: 70px;
+    }
+    .cryto-words{
+        
+       text-align: center;
+       font-size: 20px;
+       margin-left: 30px;
+        font-family: 'Courier New', Courier, monospace;
+       
+        
+    }
+    .crypto-percentage{
+        color: rgb(223, 16, 16);
+        position: relative;
+        left: 70%;
+        top:2%;
+        background-color: rgb(184, 86, 86);
+        width: 15px;
+        height: 10px;
+        font-size: 16px;
+        border-radius: 6px;
+        padding: 3px;
+        letter-spacing: 1px;
+    }
+    .crypto-pic-and-text-container{
+        position: relative;
+        bottom: 20px;
+    }
+    .buy{
+       width: 110px;
+       height: 30px;
+       border: none;
+       background-color:rgb(9, 214, 9) ;
+       border-radius:5px;
+       color: white;
+
+    }
+    .sell{
+        width: 110px;
+        height: 30px;
+        border: none;
+        background-color:rgb(252, 35, 35) ;
+        border-radius:5px;
+        color: white;
+ 
+    }
+
+    .buy-and-sell{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+    .btc-price{
+        color: white;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .shit-alt-heading{
+        padding-left: 40px;
+        padding-top: 10px;
+        font-size: 35px;
+        font-family:Arial, Helvetica, sans-serif;letter-spacing: 1px;
+       
+    }
+    
+    .scrollable_div{
+    
+        gap: 60px;
+        display: grid;
+        grid-template-columns:auto auto auto auto auto auto auto ;
+        overflow-x: scroll;
+        padding: 40px 0;
+        background-color: black;
+        margin-top: 10px;
+    }
+    
+    .scrollable_div::-webkit-scrollbar{
+        height: 10px;
+        
+       
+    }
+    
+    .scrollable_div::-webkit-scrollbar-track{
+        background-color:#113faa;
+        border-radius: 30px;
+        
+       
+    }
+    
+    .scrollable_div::-webkit-scrollbar-thumb{
+        background-color: rgb(250, 246, 246);
+        border-radius: 30px;
+        width: 5rem;
+    }
+      
+    
+    .scrollable_div::-webkit-scrollbar-button{
+        width: 20%;
+       
+       
+    }
+
+    @media screen and (max-width:1024px) {
+        
+
+        main{
+           
+            padding-top: 5%;
+            background-color:#12161d;
+            padding-left: 10%;
+         }
+         
+         h1{
+             font-size:35px;
+             font-weight: 700;
+            padding-left: 20px;
+             color: white;
+         }
+         .st-main-content{
+          
+             padding-left: 20px;
+             
+         }
+         p{
+             font-size: 18px;
+             font-weight: 500;
+             margin-top: 30px;
+             padding-left: 20px;
+              color: white;
+             
+         }
+         .main-img{
+             width: 60%;       
+            padding-left: 70px;
+            }
+         
+         .learn{
+           
+             margin-top: 25px;
+             border-radius: 20px;
+             width: 140px;
+             height: 39px;
+             color: white;
+             border: none;
+             border-color: white;
+             background-color: #113faa;
+             transition: 2s;
+             transition-property: border-style border-color;
+             transition-duration: 0.5s;
+             cursor: pointer;
+             letter-spacing: 1px;
+            
+         }
+         .crypto-images{
+            
+            top: 55px;
+            left: 90px;
+        }
+    }
+
+
+    @media screen and (max-width:912px) {
+        
+
+        main{
+           
+            padding-top: 5%;
+            background-color:#12161d;
+            padding-left: 3%;
+            display: flex;
+            justify-content: space-around;
+         }
+         
+         h1{
+             font-size:30px;
+             font-weight: 700;
+            padding-left: 20px;
+             color: white;
+         }
+         .st-main-content{
+          
+             padding-left: 20px;
+             
+         }
+         p{
+             font-size: 18px;
+             font-weight: 500;
+             margin-top: 20px;
+             padding-left: 10px;
+             color: white;
+             
+         }
+         .main-img{
+             width: 70%;     
+            }
+         
+         .learn{
+           
+             margin-top: 10%;
+             border-radius: 20px;
+             width: 140px;
+             height: 39px;
+        
+         }
+         .crypto-images{
+            
+            top: 47px;
+            left: 95px;
+        }
+    }
+
+
+    /* MAX WIDTH 768PX */
+    
+    @media screen and (max-width:768px) {
+        
+        body{
+            overflow-X: hidden;
+        }
+        main{
+          
+            padding-left: 3%;
+            display: flex;
+            justify-content: space-around;
+         }
+         
+         h1{
+             font-size:30px;
+             font-weight: 700;
+            padding-left: 20px;
+             color: white;
+         }
+         .st-main-content{
+          
+             padding-left: 20px;
+             
+         }
+         p{
+             font-size: 18px;
+             font-weight: 500;
+             margin-top: 20px;
+             padding-left: 10px;
+             color: white;
+           
+         }
+         .main-img{
+             width: 80%; 
+             margin:0;
+             padding: 0;
+                    }
+         
+         .learn{
+           
+             margin-top: 10%;
+             border-radius: 10px;
+             width: 140px;
+             height: 39px;
+             color: white;
+             border: none;
+             border-color: white;
+             background-color: #113faa;
+             transition: 2s;
+             transition-property: border-style border-color;
+             transition-duration: 0.5s;
+             cursor: pointer;
+             letter-spacing: 1px;
+            
+         }
+    }
+      
+    @media screen and (max-width:720px) {
+        
+    
+         
+         h1{
+             font-size:23px;
+             font-weight: bolder;
+            padding-left: 20px;
+             color: white;
+         }
+         p{
+            font-size: 17px;
+         }
+        }
+        @media screen and (max-width:670px) {
+        
+    
+         
+            h1{
+                font-size:30px;
+                font-weight: bolder;
+               padding-left: 20px;
+                color: white;
+            }
+            p{
+                font-size:15px;
+            }
+            .main-img{
+                width: 70%;
+                margin-left: 50px;
+            }
+         
+        
+        }
+
+     /* MAX WIDTH 540PX */
+    
+     @media screen and (max-width:540px) {
+         
+        ul{
+         
+            height: 10vh;
+            width: 100%;
+        }
+        main{
+          
+            display: flex;
+           flex-wrap: wrap;
+           justify-content:normal;
+          
+         }
+         .scrollable_div::-webkit-scrollbar{
+            height: 10px;
+            display: none;
+           
+        }
+        .shit-alt-heading{
+          
+            font-size: 30px;
+          
+           
+        }
+         
+         h1{
+             font-size:35px;
+             font-weight: 700;
+             color: white;
+             letter-spacing: 2px;
+             margin: 0;
+             padding-left: 20px;
+           
+            
+         }
+         .st-main-content{
+           padding: 0;
+           display:grid;
+           width: 100%;
+           margin-top: 20px;
+         }
+         p{
+             font-size: 20px;
+             font-weight: 500;
+             padding-bottom: 20px;
+             padding-left: 20px;
+             color: white;
+          
+             
+         }
+         .main-img{
+             width: 70%; 
+          
+                    }
+         
+         .learn{
+           
+           
+             border-radius: 20px;
+             width: 140px;
+             height: 39px;
+             color: white;
+             border: none;
+             border-color: white;
+             background-color: #113faa;
+             transition: 2s;
+             transition-property: border-style border-color;
+             transition-duration: 0.5s;
+             cursor: pointer;
+             letter-spacing: 1px;
+             margin: 2%;
+        
+            
+            
+         }
+       
+
+      .content{
+        height: 140px;
+        width: 270px;   
+      
+        }
+        .crypto-images{
+            width: 18px;
+            border-radius: 100%;
+            display: inline;
+            position: relative;
+            top: 45b npx;
+            left: 70px;
+        }
+        .cryto-words{
+            
+           text-align: center;
+           font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+             margin-top: 28px;
+           
+            
+        }
+        .crypto-percentage{
+            color: rgb(223, 16, 16);
+            position: relative;
+            left: 75%;
+            top:-29%;
+            background-color: rgb(184, 86, 86);
+            width: 15px;
+            height: 10px;
+            font-size: 12px;
+            border-radius: 6px;
+            padding: 3px;
+            letter-spacing: 1px;
+        }
+        .crypto-pic-and-text-container{
+            position: relative;
+            bottom: 40px;
+        }
+        .buy{
+           width: 110px;
+           height: 30px;
+           border: none;
+           background-color:rgb(9, 214, 9) ;
+           border-radius:5px;
+           color: white;
+           cursor:pointer;
+    
+        }
+        .sell{
+            width: 110px;
+            height: 30px;
+            border: none;
+            background-color:rgb(252, 35, 35) ;
+            border-radius:5px;
+            color: white;
+            cursor:gr ;
+     
+        }
+    
+        .buy-and-sell{
+            display: flex;
+            justify-content: space-around;
+            margin-top: -34px;
+        }
+        .btc-price{
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            position: relative;
+            bottom: 39px;
+        }
+       
+      }
+
+    
+      /* MAX WIDTH 393PX */
+    
+      @media screen and (max-width: 393px){
+        .main-img{
+            width: 90%; 
+         margin-left:10px;
+      }
+
+      .content{
+        height: 140px;
+        width: 270px;   
+      
+        }
+    
+        .crypto-images{
+            width: 18px;
+            border-radius: 100%;
+            display: inline;
+            position: relative;
+            top: 52px;
+            left: 95px;
+        }
+        .cryto-words{
+            
+           text-align: center;
+           font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+           
+            
+        }
+        .shit-alt-heading{
+          
+            font-size: 28px;
+          
+           
+        }
+        p{
+            font-size: 18px;
+        }
+        h1{
+            font-size: 25px;
+        }
+        .crypto-percentage{
+            color: rgb(223, 16, 16);
+            position: relative;
+            left: 75%;
+            top:-34%;
+            background-color: rgb(184, 86, 86);
+            width: 15px;
+            height: 10px;
+            font-size: 12px;
+            border-radius: 6px;
+            padding: 3px;
+            letter-spacing: 1px;
+        }
+        .crypto-pic-and-text-container{
+            position: relative;
+            bottom: 40px;
+        }
+        .buy{
+           width: 110px;
+           height: 30px;
+           border: none;
+           background-color:rgb(9, 214, 9) ;
+           border-radius:5px;
+           color: white;
+    
+        }
+        .sell{
+            width: 110px;
+            height: 30px;
+            border: none;
+            background-color:rgb(252, 35, 35) ;
+            border-radius:5px;
+            color: white;
+     
+        }
+    
+        .buy-and-sell{
+            display: flex;
+            justify-content: space-around;
+            margin-top: -35px;
+        }
+        .btc-price{
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            position: relative;
+            
+            bottom: 45px;
+        }
+    }
+       
+      
+      
+        /* MAX WIDTH 300PX */
+    
+        @media screen and (max-width: 280px) {
+            .main-img{
+                width: 80%; 
+              margin-left:18px ;
+          }
+          .crypto-images{
+            width: 18px;
+            border-radius: 100%;
+            display: inline;
+            position: relative;
+            top: 51px;
+            left: 90px;
+        }
+        ul{
+         
+            height:110px;
+            z-index: 99999;
+        }
+    
+        }
+      /* from 700px and below will have thsi kind of navigation  */
+
+      @media screen and (max-width:700px) {
+        *{
+            box-sizing:border-box ;
+            margin: 0;
+            padding: 0;
+        }
+      
+        .burger div{
+            margin: 3px;
+            display: block;
+            transition: 1s;
+            transition-delay: 0s;
+            transition-duration: all 0.3s ease;
+            
+        }
+
+        ul{
+            position: absolute;
+            right: 0px;
+            height: 100px;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            top: 8vh ;
+            background-color:#020914;
+            transform: translateX(100%);
+            transition-delay: 0s;
+            transition: ease 0.2s;
+            transition-duration: 0.6s;
+            padding: 0;
+            margin: 0;
+           
+           
+        }
+      
+        li{
+          display: inline;
+        }
+        .ul-active{
+           transform: translateX(0%);
+        }
+        }
+        @media screen and (max-width:1024px) {
+            
+        }
+
+         
+    
+   /* this is for the burger turning into an X  */
+   .toogle .line1 {
+    transform: rotate(-45deg)translate(-5px, 6px);
+    }
+    .toogle .line2 {
+        opacity: 0;
+    }
+    .toogle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+       
+     
+
